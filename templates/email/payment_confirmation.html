@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; color: #222; }
+        .container { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #e0e0e0; max-width: 600px; margin: 40px auto; padding: 32px; }
+        .logo { text-align: center; margin-bottom: 24px;}
+        .logo img { max-width: 180px; height: auto; }
+        h2 { color: #015F4F; }
+        .details-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #f0f0f0; }
+        th { background: #e6f3f1; color: #015F4F; }
+        .bank-details { background: #e6f3f1; padding: 15px; border-left: 4px solid #015F4F; margin: 20px 0; }
+        .footer { margin-top: 32px; font-size: 13px; color: #888; }
+        .ref { font-weight: bold; color: #015F4F; }
+        .brand { color: #015F4F; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.thelifevoyage.com/assets/logo-BSnIDg4Z.png" alt="The Life Voyage Logo">
+        </div>
+        <h2>Payment Confirmation and Next Steps</h2>
+        <p>Dear {{ customer_name }},</p>
+        <p>Thank you for your payment of <strong>{{ amount_display }}</strong> for <strong>{{ service_name }}</strong>. We truly appreciate your promptness in settling this portion of your balance.</p>
+        <table class="details-table">
+            <tr><th>Status</th><td>{{ status|capfirst }}</td></tr>
+            <tr><th>Country</th><td>{{ country }}</td></tr>
+            <tr><th>Currency</th><td>{{ currency|upper }}</td></tr>
+            <tr><th>Payment Intent ID</th><td>{{ payment_intent_id }}</td></tr>
+            <tr><th>Reference</th><td class="ref">{{ reference }}</td></tr>
+        </table>
+        <p>As of now, the remaining balance on your account is <strong>{% if remaining_balance_display %}{{ remaining_balance_display }}{% else %}[remaining amount]{% endif %}</strong>. For your next payment, which is the second installment, kindly send a bank transfer to the following account details:</p>
+        <div class="bank-details">
+            <h3>Bank Transfer Details</h3>
+            <p><strong>Name:</strong> H Aasdsmi</p>
+            <p><strong>Sort Code:</strong> 123234</p>
+            <p><strong>Account Number:</strong> 424334</p>
+            <p><strong>Reference:</strong> <span class="ref">{{ reference }}</span></p>
+        </div>
+        <p>It is important to include the reference <span class="ref">{{ reference }}</span> when making your payment to help us track it effectively.</p>
+        <p>If you have any questions or need assistance, feel free to reach out to us at <a href="mailto:info@thelifevoyage.com">info@thelifevoyage.com</a></p>
+        <div class="footer">
+            <p>Thank you once again for choosing our services.</p>
+            <p>Warm regards,<br>The Life Voyage Team</p>
+            <p style="margin-top: 16px;" class="brand">The Life Voyage</p>
+        </div>
+    </div>
+</body>
+</html> 

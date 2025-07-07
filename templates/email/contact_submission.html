@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Form Submission</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; color: #222; }
+        .container { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #e0e0e0; max-width: 600px; margin: 40px auto; padding: 32px; }
+        .logo { text-align: center; margin-bottom: 24px; }
+        .logo img { max-width: 180px; height: auto; }
+        h2 { color: #015F4F; }
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #f0f0f0; }
+        th { background: #e6f3f1; color: #015F4F; }
+        .footer { margin-top: 32px; font-size: 13px; color: #888; }
+        .brand { color: #015F4F; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.thelifevoyage.com/assets/logo-BSnIDg4Z.png" alt="The Life Voyage Logo">
+        </div>
+        <h2>New Contact Form Submission</h2>
+        <p>Hello Team,</p>
+        <p>You have received a new contact form submission. Below are the details:</p>
+        <table>
+            <tr><th>Name</th><td>{{ name }}</td></tr>
+            <tr><th>Email</th><td>{{ email }}</td></tr>
+            <tr><th>Contact Number</th><td>{{ phone }}</td></tr>
+            <tr><th>Source</th><td>{{ source }}</td></tr>
+            <tr><th>Enquiry</th><td>{{ message }}</td></tr>
+        </table>
+        <div class="footer">
+            <p>Please review the submission and follow up as needed.</p>
+            <p>Best regards,<br>Your Website Support Team</p>
+            <p style="margin-top: 16px;" class="brand">The Life Voyage</p>
+        </div>
+    </div>
+</body>
+</html> 
