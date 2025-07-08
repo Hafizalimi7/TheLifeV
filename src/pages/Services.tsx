@@ -119,7 +119,7 @@ export default function Services() {
                 <service.icon className="h-6 w-6" />
               </div> */}
               <img src={service.icon} alt="" className='rounded'/>
-              <h3 className="mt-6 text-xl font-semibold text-gray-900">{service.title}</h3>
+              <h3 className="mt-6 text-lg font-semibold text-gray-900">{service.title}</h3>
               <p className="mt-2 text-primary font-semibold">{service.price}</p>
               <p className="mt-4 text-gray-600">{service.description}</p>
               <button
