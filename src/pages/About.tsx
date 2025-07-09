@@ -42,13 +42,11 @@ export default function About() {
           I understand that every cancer journey is unique, and I am here to guide, inspire, and support you with a compassionate approach tailored to your specific needs. Whether you’re looking to strengthen your immune system, improve your quality of life, or find peace and balance during treatment, I will walk with you every step of the way.
           </p>
           <p className='mt-4 text-md text-gray-500'>
-          For years, I studied cancer and radiotherapy at university, earning my master’s degree. During my studies, I realized the focus was often on managing cancer rather than curing it. This felt incomplete to me, especially in light of a powerful Hadith narrated by Abu al-Darda:
+          For years, I studied cancer and radiotherapy at university, earning my master’s degree. During my studies, I realized the focus was often on managing cancer rather than curing it. This felt incomplete to me and sparked a desire to explore a more comprehensive approach to healing.
           </p>
-          <p className='italic mt-4 text-md text-gray-500'>
-          “The Prophet (ﷺ) said: Allah has sent down both the disease and the cure, and He has appointed a cure for every disease, so treat yourselves medically, but use nothing unlawful.”
-          </p>
+         
           <p className='mt-4 text-md text-gray-500'>
-          This belief inspired me to explore a holistic approach to health. Over the years, I’ve unlearned much of what I knew and deeply immersed myself in holistic practices, all while balancing them with my medical background. This journey has been transformative, leading me to where I am today—combining the best of both worlds to truly help others in their healing journeys.
+          That realization inspired me to pursue a holistic path. Over the years, I’ve unlearned much of what I once knew and deeply immersed myself in holistic practices, all while balancing them with my medical background. This journey has been transformative, leading me to where I am today—combining the best of both worlds to truly help others in their healing journeys.
           </p>
         </div>
 

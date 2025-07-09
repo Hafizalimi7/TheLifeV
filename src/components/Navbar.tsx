@@ -9,8 +9,9 @@ export default function Navbar() {
     <nav className="bg-white shadow-md relative z-50">
       <div className="max-w-7xl mx-auto md:px-4 px-2 lg:px-8">
         <div className="flex justify-between h-16">
+          
           <div className="flex items-center">
-            <Link to="/" className="flex gap-3 items-center">
+            <Link to="/" onClick={() => setIsOpen(false)} className="flex gap-3 items-center">
               <img 
                 src={images.logo} 
                 alt="The Life Voyage Logo" 
